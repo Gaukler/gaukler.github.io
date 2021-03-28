@@ -1,6 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: page
 ---
+This is my index page, alhtough there's nothing here yet...
+
+Links to the (currently empty) project pages:  
+[Plain Renderer](/plain-renderer/)  
+[Software Rasterizer](/software-rasterizer/)  
+[OpenGL Renderer](/opengl-renderer/)  
+[Blender Alamo Tools](/alamo-tools/)  
