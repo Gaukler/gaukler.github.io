@@ -1,10 +1,27 @@
 ---
 layout: page
 ---
-This is my index page, although there's nothing here yet...
+Page is currently being built, check back later.
 
-Links to the (currently empty) project pages:  
-[Plain Renderer](/plain-renderer/)  
-[Software Rasterizer](/software-rasterizer/)  
-[OpenGL Renderer](/opengl-renderer/)  
-[Blender Alamo Tools](/alamo-tools/)  
+
+<div class="project-box" href="/plain-renderer/">
+  <a href="/plain-renderer/">
+    <img src="images/plainSponza01.PNG" alt="Plain thumbnail" />
+    <div class="project-text-box">
+      <h4>Plain Renderer</h4>
+      <p>Here will be a little description</p>
+    </div>
+  </a>
+</div>
+
+<div class="project-box" href="/plain-renderer/">
+  <a href="/software-rasterizer//">
+    <img src="images/plainSponza01.PNG" alt="Software Rasterizer thumbnail" />
+    <div class="project-text-box">
+      <h4>Software Rasterizer</h4>
+      <p>Here will be a little description</p>
+    </div>
+  </a>
+</div>
+
+<br class="float-clear" />
