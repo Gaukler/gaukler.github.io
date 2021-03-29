@@ -1,0 +1,27 @@
+a {
+    color: inherit;
+}
+
+.project-box {
+    float: left;
+    width: 40%;
+    margin: 1%;
+}
+
+.project-box:hover img {
+    opacity: 0.5;
+}
+
+.project-box:hover a {
+    text-decoration: none;
+}
+
+.project-text-box {
+    background: rgba(230,230,230, 0.5);
+    padding: 2%;
+    opacity: 1;
+}
+
+.float-clear {
+    clear: both;
+}
