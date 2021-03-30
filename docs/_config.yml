@@ -22,7 +22,7 @@ title: Alexander Gauggel's programming portfolio
 email: alexander.gauggel@web.de
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  Gaukler 
+github_username: Gaukler 
 
 # Build settings
 theme: minima
