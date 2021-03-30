@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 ---
 Page is currently being built, check back later.
 
