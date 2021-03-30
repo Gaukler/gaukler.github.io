@@ -19,7 +19,7 @@ layout: home
 
     <div class="project-box" href="/plain-renderer/">
       <a href="/software-rasterizer//">
-        <img src="images/softwareRasterizerUkulele.PNG" alt="Software Rasterizer thumbnail" />
+        <img src="images/softwareRasterizerUkulele.png" alt="Software Rasterizer thumbnail" />
         <div class="project-text-box">
           <h3>Software Rasterizer</h3>
           <p>Here will be a little description</p>
