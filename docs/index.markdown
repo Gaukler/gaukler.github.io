@@ -9,7 +9,7 @@ layout: home
 <div class="project-container">
     <div class="project-box" href="/plain-renderer/">
       <a href="/plain-renderer/">
-        <img src="images/plainSponza01.PNG" alt="Plain thumbnail" />
+        <img src="images/plainSponza01.png" alt="Plain thumbnail" />
         <div class="project-text-box">
           <h3>Plain Renderer</h3>
           <p>Here will be a little description</p>
