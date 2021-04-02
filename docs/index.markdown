@@ -7,7 +7,7 @@ layout: home
 </h1>
 
 <div class="project-container">
-    <div class="project-box" href="/plain-renderer/">
+    <div class="project-box">
       <a href="/plain-renderer/">
         <img src="images/plainSponza01.png" alt="Plain thumbnail" />
         <div class="project-text-box">
@@ -17,11 +17,31 @@ layout: home
       </a>
     </div>
 
-    <div class="project-box" href="/plain-renderer/">
+    <div class="project-box">
       <a href="/software-rasterizer//">
         <img src="images/softwareRasterizerUkulele.png" alt="Software Rasterizer thumbnail" />
         <div class="project-text-box">
           <h3>Software Rasterizer</h3>
+          <p>Here will be a little description</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="project-box">
+      <a href="/opengl-renderer/">
+        <img src="images/GLRendererFlightHelmet.png" alt="OpenGL Rasterizer thumbnail" />
+        <div class="project-text-box">
+          <h3>OpenGL Renderer</h3>
+          <p>Here will be a little description</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="project-box">
+      <a href="/alamo-tools/">
+        <img src="images/AlamoCode.png" alt="Alamo Tools thumbnail" />
+        <div class="project-text-box">
+          <h3>Blender Plugin: Alamo Tools</h3>
           <p>Here will be a little description</p>
         </div>
       </a>
