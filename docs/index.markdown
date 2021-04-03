@@ -12,7 +12,7 @@ layout: home
         <img src="images/thumbnails/PlainThumbnail.jpg" alt="Plain thumbnail" />
         <div class="project-text-box">
           <h3>Plain Renderer</h3>
-          <p>Here will be a little description</p>
+          <p>C++ Vulkan Renderer featuring advanced real time rendering techniques</p>
         </div>
       </a>
     </div>
@@ -22,7 +22,7 @@ layout: home
         <img src="images/thumbnails/SoftwareRasterizerThumbnail.jpg" alt="Software Rasterizer thumbnail" />
         <div class="project-text-box">
           <h3>Software Rasterizer</h3>
-          <p>Here will be a little description</p>
+          <p>C++ Software Rasterizer featuring multithreading and SIMD</p>
         </div>
       </a>
     </div>
@@ -32,7 +32,7 @@ layout: home
         <img src="images/thumbnails/GLRendererThumbnail.jpg" alt="OpenGL Rasterizer thumbnail" />
         <div class="project-text-box">
           <h3>OpenGL Renderer</h3>
-          <p>Here will be a little description</p>
+          <p>C++ OpenGL Renderer featuring basic real time rendering techniques</p>
         </div>
       </a>
     </div>
@@ -42,7 +42,7 @@ layout: home
         <img src="images/thumbnails/AlamoThumbnail.jpg" alt="Alamo Tools thumbnail" />
         <div class="project-text-box">
           <h3>Blender Plugin: Alamo Tools</h3>
-          <p>Here will be a little description</p>
+          <p>Blender Plugin implementing import and export of Alamo-Engine models</p>
         </div>
       </a>
     </div>
