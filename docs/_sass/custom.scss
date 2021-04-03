@@ -2,13 +2,19 @@ a {
     color: inherit;
 }
 
+figcaption{
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+}
+
 .project-container{
     display:flex;
     flex-wrap:wrap;
 }
 
 .project-box {
-    width: 40%;
+    width: 48%;
     margin-left: auto;
     margin-right: auto;
     background: rgba(230,230,230, 0.5);
