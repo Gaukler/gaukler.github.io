@@ -19,17 +19,27 @@ To achieve this I decided to go for a physically based approach.
 Not only using the corresponging BRDF models, but also using physical light units, exposure values with the proper equations for the camera 
 and following physically motivated techniques for volumetric and sky rendering.
 
-<figure>
-  <img src="/images/Plain/sky.png" alt="Sky" />
-  <figcaption> Sky rendering using earth's atmosphere values </figcaption>
-</figure>
-
 <div class="image-text-container">
 
     <div class="image-text-text-container">
-        Of course one of the most importance factors in good looking rendering is indirect lighting. 
-        Because of the dynamic sky model and the joy of moving the sun around in real time I decided that I wanted to implement a GI system that supports dynamic lighting. 
-        Inspired by recent techniques that use signed-distance-fields (SDFs) for lighting I decided to precompute an SDF per mesh and trace the indirect lighting at runtime in an SDF representation of the scene.
+        <h1>Feature list</h1>
+        <ul>
+        <li>Real time diffuse GI, by tracing SDF representation of scene and denoising</li>
+        <li>Cook-Torrance BRDF using GGX-distribution, correlated smith geometry term and multiscattering</li>
+        <li>Temporal Anti Aliasing using an exponential history buffer and bicubic sampling</li>
+        <li>Physically based sky rendering with multiscattering approximation</li>
+        <li>Physically based light and camera units and histogram based automatic exposure</li>
+        <li>Volumetric lighting using froxels</li>  
+        <li>Bloom and tonemapping</li>
+        <li>Single pass min/max hierarchical depth buffer generation</li>
+        <li>Cascaded shadow maps for the sun, tightly fitted to depth buffer</li>
+        <li>Blue noise generation using the void and cluster method</li>
+        <li>3D perlin noise generation</li>
+        <li>Simple job system for multithreading, used for accelerating SDF generation, texture loading and multithreaded drawcall recording</li>
+        <li>Custom Vulkan memory allocator</li>
+        <li>Separate asset pipeline producing mesh data in a binary format for efficient loading and SDF generation</li>
+        <li>Shader hot reloading</li>
+        </ul>
     </div>
     
     <figure class="image-text-image-container">
@@ -39,19 +49,8 @@ and following physically motivated techniques for volumetric and sky rendering.
     
 </div>
 
-# Feature list
 
-* Real time diffuse GI, by tracing SDF representation of scene and denoising
-* Cook-Torrance BRDF using GGX-distribution, correlated smith geometry term and multiscattering
-* Temporal Anti Aliasing using an exponential history buffer and bicubic sampling
-* Physically based sky rendering with multiscattering approximation
-* Physically based light and camera units and histogram based automatic exposure
-* Volumetric lighting using froxels     
-* Bloom and tonemapping
-* Single pass min/max hierarchical depth buffer generation
-* Cascaded shadow maps for the sun, tightly fitted to depth buffer
-* Blue noise generation using the void and cluster method
-* 3D perlin noise generation
-* Simple job system for multithreading, used for accelerating SDF generation, texture loading and multithreaded drawcall recording
-* Custom Vulkan memory allocator
-* Separate asset pipeline producing mesh data in a binary format for efficient loading and SDF generation 
+<figure>
+  <img src="/images/Plain/sky.png" alt="Sky" />
+  <figcaption> Sky rendering using earth's atmosphere values </figcaption>
+</figure>
