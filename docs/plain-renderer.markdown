@@ -38,3 +38,20 @@ and following physically motivated techniques for volumetric and sky rendering.
     </figure>
     
 </div>
+
+# Feature list
+
+* Real time diffuse GI, by tracing SDF representation of scene and denoising
+* Cook-Torrance BRDF using GGX-distribution, correlated smith geometry term and multiscattering
+* Temporal Anti Aliasing using an exponential history buffer and bicubic sampling
+* Physically based sky rendering with multiscattering approximation
+* Physically based light and camera units and histogram based automatic exposure
+* Volumetric lighting using froxels     
+* Bloom and tonemapping
+* Single pass min/max hierarchical depth buffer generation
+* Cascaded shadow maps for the sun, tightly fitted to depth buffer
+* Blue noise generation using the void and cluster method
+* 3D perlin noise generation
+* Simple job system for multithreading, used for accelerating SDF generation, texture loading and multithreaded drawcall recording
+* Custom Vulkan memory allocator
+* Separate asset pipeline producing mesh data in a binary format for efficient loading and SDF generation 
