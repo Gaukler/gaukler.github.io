@@ -20,3 +20,7 @@ Within each thread four pixels are processed at a time using SIMD. This proved t
 single pixel. Besides that, masking lanes are used to avoid branches and allowing the data to stay in the SIMD registers for as long as possible. 
 
 <img src="/images/SoftwareRasterizer/avocado.png" alt="Avocado Render">
+
+<div>
+The project can be found on <a href="https://github.com/Gaukler/Software-Rasterizer" class="link-visible">GitHub</a>.
+</div>

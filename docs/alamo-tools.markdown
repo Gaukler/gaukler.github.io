@@ -17,4 +17,8 @@ According to the feedback I adjusted the UI, automated certain procedures where 
  
 The exported models and animations can be used in the game and the plugin is actively used by the modding community. 
 Besides the mesh and animation data the exporter handles additional data, required by the game, such as collision trees, preparing shadow meshes for their use as shadow volumes and 
-visibility data for attached particle effects.
+visibility data for attached particle effects.  
+
+<div>
+The project can be found on <a href="https://github.com/Gaukler/Blender-ALAMO-Plugin" class="link-visible">GitHub</a>.
+</div>
