@@ -33,5 +33,5 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 Impressum vom Impressum Generator der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht
 
 <p>
-Diese Webseite wird über <a href="https://pages.github.com/" class="link-visible">Github Pages</a> gehostet. Die Datenschutzerklärung von Github finden sie <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" class="link-visible">hier</a>.
+Diese Webseite wird über <a href="https://pages.github.com/" class="link-visible">Github Pages</a> gehostet. Die Datenschutzerklärung von Github finden Sie <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" class="link-visible">hier</a>.
 </p>
