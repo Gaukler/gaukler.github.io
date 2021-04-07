@@ -46,6 +46,16 @@ layout: home
         </div>
       </a>
     </div>
+    
+    <div class="project-box">
+      <a href="/other-projects/">
+        <img src="images/Thumbnails/OtherThumbnail.jpg" alt="Other projects thumbnail" />
+        <div class="project-text-box">
+          <h3>Other projects</h3>
+          <p>Various university and smaller projects</p>
+        </div>
+      </a>
+    </div>
 </div>
 
 <br class="float-clear" />

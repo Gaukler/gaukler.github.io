@@ -16,7 +16,7 @@ After I made some progress, I started to work together with some members of the 
 According to the feedback I adjusted the UI, automated certain procedures where possible and rewrote error and warning messages to be as informative as possible.
  
 The exported models and animations can be used in the game and the plugin is actively used by the modding community. 
-Besides the mesh and animation data the exporter handles additional data, required by the game, such as collision trees, preparing shadow meshes for their use as shadow volumes and 
+Besides mesh and animation data the exporter handles additional data that is required by the game, such as collision trees, preparing shadow meshes for their use as shadow volumes and 
 visibility data for attached particle effects.  
 
 <div>
