@@ -19,6 +19,11 @@ To achieve this I decided to go for a physically based approach.
 Not only using the corresponging BRDF models, but also using physical light units, exposure values with the proper equations for the camera 
 and following physically motivated techniques for volumetric and sky rendering.
 
+<div>
+The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" class="link-visible">GitHub</a>.
+</div> 
+<br/>
+
 <div class="image-text-container">
 
     <div class="image-text-text-container">
@@ -48,7 +53,6 @@ and following physically motivated techniques for volumetric and sky rendering.
     </figure>
     
 </div>
-
 
 <figure>
   <img src="/images/Plain/sky.png" alt="Sky" />
