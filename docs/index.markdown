@@ -2,10 +2,6 @@
 layout: home
 ---
 
-<h1 style="text-align:center;"> 
-    Page is currently being built, check back later.
-</h1>
-
 <div class="project-container">
     <div class="project-box">
       <a href="/plain-renderer/">
