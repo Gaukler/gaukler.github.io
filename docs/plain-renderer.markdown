@@ -24,6 +24,11 @@ The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" c
 </div> 
 <br/>
 
+<figure>
+  <img src="/images/Plain/profiling-UI.png" alt="Profiling and UI" />
+  <figcaption> Profiling statistics and render settings UI </figcaption>
+</figure>
+
 <div class="image-text-container">
 
     <div class="image-text-text-container">
