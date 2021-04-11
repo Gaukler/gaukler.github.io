@@ -11,7 +11,9 @@ It's build on a small OpenGL wrapper. The GPU particle system uses the tradition
 double buffered design, with a compute shader for emission and a shader for simulation. 
 The simulation shader supports collision with the scene's depth buffer.
 
-<img src="/images/OtherProjects/GPUparticles.gif">
+<a href="/images/OtherProjects/GPUparticles.gif" target="_blank">
+  <img src="/images/OtherProjects/GPUparticles.gif">
+</a>
 
 # Animation and Simulation University Project
 
@@ -24,7 +26,9 @@ My contribution was writing the rigid body system, terrain, player control and t
 The rigid body system supports sphere colliders and collision with the height based terrain.
 In terms of visuals I implemented TAA, per object motion blur and the raymarched sky.
 
-<img src="/images/OtherProjects/AnSim.gif">
+<a href="/images/OtherProjects/AnSim.gif" target="_blank">
+  <img src="/images/OtherProjects/AnSim.gif">
+</a>
 
 # Augmented Reality Shader Cube
 
@@ -43,42 +47,54 @@ My main contribution was to come up with cool shader effects and implement them.
 <div style="display:flex;flex-wrap:wrap;">
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/DepthPeeling.PNG">
+            <a href="/images/OtherProjects/ShaderCube/DepthPeeling.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/DepthPeeling.PNG">
+            </a>
             <figcaption> Order independent transparency, using depth peeling </figcaption>
         </figure>
     </div>
     
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/Disco.PNG">
+            <a href="/images/OtherProjects/ShaderCube/Disco.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/Disco.PNG">
+            </a>
             <figcaption> Many lights, using deferred shading and spherical light proxies </figcaption>
         </figure>
     </div>
     
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/IBL.PNG">
+            <a href="/images/OtherProjects/ShaderCube/IBL.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/IBL.PNG">
+            </a>
             <figcaption> Diffuse image based lighting </figcaption>
         </figure>
     </div>
 
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/SphereTracing.PNG">
+            <a href="/images/OtherProjects/ShaderCube/SphereTracing.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/SphereTracing.PNG">
+            </a>
             <figcaption> Sphere tracing on an implicit surface, defined by a signed distance field </figcaption>
         </figure>
     </div>
     
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/Translucency.PNG">
+            <a href="/images/OtherProjects/ShaderCube/Translucency.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/Translucency.PNG">
+            </a>
             <figcaption> Translucency </figcaption>
         </figure>
     </div>
     
     <div class="image_tripple">
         <figure>
-            <img src="/images/OtherProjects/ShaderCube/Volumetric.PNG">
+            <a href="/images/OtherProjects/ShaderCube/Volumetric.PNG" target="_blank">
+              <img src="/images/OtherProjects/ShaderCube/Volumetric.PNG">
+            </a>
             <figcaption> Volumetric shadowed spotlight </figcaption>
         </figure>
     </div>

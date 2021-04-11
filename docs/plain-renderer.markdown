@@ -10,7 +10,9 @@ Additionally my goal was to build a framework that avoided as much boilerplate c
 so that I could focus on implementing rendering techniques without being bogged down by tedious details, like image layout transitions or memory barriers.  
 
 <figure>
-  <img src="/images/Plain/sponza01.png" alt="Sponza Screenshot" />
+  <a href="/images/Plain/sponza01.png" target="_blank">
+    <img src="/images/Plain/sponza01.png" alt="Sponza Screenshot" />
+  </a>
   <figcaption> The classic Sponza scene rendered in Plain </figcaption>
 </figure>
 
@@ -25,7 +27,9 @@ The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" c
 <br/>
 
 <figure>
-  <img src="/images/Plain/profiling-UI.png" alt="Profiling and UI" />
+  <a href="/images/Plain/profiling-UI.png" target="_blank">
+    <img src="/images/Plain/profiling-UI.png" alt="Profiling and UI"/>
+  </a>
   <figcaption> Profiling statistics and render settings UI </figcaption>
 </figure>
 
@@ -53,13 +57,17 @@ The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" c
     </div>
     
     <figure class="image-text-image-container">
-      <img src="/images/Plain/indirectLighting.gif" alt="Indiret lighting" />
+      <a href="/images/Plain/indirectLighting.gif" target="_blank">
+        <img src="/images/Plain/indirectLighting.gif" alt="Indiret lighting" />
+        </a>
       <figcaption> Dynamic indirect lighting </figcaption>
     </figure>
     
 </div>
 
 <figure>
-  <img src="/images/Plain/sky.png" alt="Sky" />
+  <a href="/images/Plain/sky.png" target="_blank">
+    <img src="/images/Plain/sky.png" alt="Sky" />
+  </a>
   <figcaption> Sky rendering using earth's atmosphere values </figcaption>
 </figure>
