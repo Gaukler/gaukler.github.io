@@ -61,7 +61,7 @@ figcaption{
     margin-right: 27.5%;
     margin-top: 24px;   /* svg is fixed pixel size, so top margin needs to be fixed size too */
     @media(max-width: 1000px){
-        margin-right: 9%;
+        margin-right: max(9%, 48px);
     }
     transform: scale(3);
     a:hover{
