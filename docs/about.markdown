@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-<img src="/images/portrait.png" class="portrait"/>
+<img src="/images/portrait.jpg" class="portrait"/>
 <br/>
 
 Hello there! My name is Alexander Gauggel. I'm currently doing a Master's in computational visualistics at the University of Koblenz-Landau.  
