@@ -9,7 +9,7 @@ After I implemented the basics I decided to use it as an exercise in CPU optimiz
 improved cache hit rates. Additionally I learned about SIMD and multithreading and used it to speed up the computationally most expensive parts of the rendering.
 
 <a href="/images/SoftwareRasterizer/ukulele.png" target="_blank">
-  <img src="/images/SoftwareRasterizer/ukulele.png" alt="Ukulele Render"/>
+  <img src="/images/SoftwareRasterizer/ukulele.jpg" alt="Ukulele Render"/>
 </a>
 
 The project is only using the C++ standard library, no external libraries have been used. Meshes are loaded as .obj files with textures in the .tga format. 
@@ -21,7 +21,7 @@ Within each thread four pixels are processed at a time using SIMD. This proved t
 single pixel's computations. Besides that, masking lanes are used to avoid branches and allowing the data to stay in the SIMD registers for as long as possible. 
 
 <a href="/images/SoftwareRasterizer/avocado.png" target="_blank">
-  <img src="/images/SoftwareRasterizer/avocado.png" alt="Avocado Render">
+  <img src="/images/SoftwareRasterizer/avocado.jpg" alt="Avocado Render">
 </a>
 
 <div>

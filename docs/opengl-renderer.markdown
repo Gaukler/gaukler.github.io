@@ -11,7 +11,7 @@ in which I implemented light propagation volumes(LPVs), screen space reflections
 
 <figure>
   <a href="/images/GLRenderer/FlightHelmet.png" target="_blank">
-    <img src="/images/GLRenderer/FlightHelmet.png" alt="Flight Helmet IBL" />
+    <img src="/images/GLRenderer/FlightHelmet.jpg" alt="Flight Helmet IBL" />
   </a>
   <figcaption> Flight Helmet model, lit using image based lighting </figcaption>
 </figure>
@@ -22,7 +22,7 @@ pre-convolving an HDRi cubemap and using the split-sum approximation for the spe
 
 <figure>
   <a href="/images/GLRenderer/LPV.png" target="_blank">
-    <img src="/images/GLRenderer/LPV.png" alt="Light propagation volumes" />
+    <img src="/images/GLRenderer/LPV.jpg" alt="Light propagation volumes" />
   </a>
   <figcaption> A combination of LPV, SSDO and SSR is used for a coarse approximation of indirect lighting </figcaption>
 </figure>
@@ -32,7 +32,7 @@ Additionally shadowed point lights are supported.
 
 <figure>
   <a href="/images/GLRenderer/PointLights.png" target="_blank">
-    <img src="/images/GLRenderer/PointLights.png" alt="Point Light demo" />
+    <img src="/images/GLRenderer/PointLights.jpg" alt="Point Light demo" />
   </a>
   <figcaption> Sponza scene lit by four point lights, two shadowed and two unshadowed </figcaption>
 </figure>
@@ -42,7 +42,7 @@ Depending on the global illumination algorithm, reflections from the IBL or the 
 
 <figure>
   <a href="/images/GLRenderer/SSR.png" target="_blank">
-    <img src="/images/GLRenderer/SSR.png" alt="Screen Space reflections demo" />
+    <img src="/images/GLRenderer/SSR.jpg" alt="Screen Space reflections demo" />
   </a>
   <figcaption> Screen space reflections, the floor uses a smooth metal material </figcaption>
 </figure>

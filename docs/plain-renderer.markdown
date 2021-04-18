@@ -11,7 +11,7 @@ so that I could focus on implementing rendering techniques without being bogged 
 
 <figure>
   <a href="/images/Plain/sponza01.png" target="_blank">
-    <img src="/images/Plain/sponza01.png" alt="Sponza Screenshot" />
+    <img src="/images/Plain/sponza01.jpg" alt="Sponza Screenshot" />
   </a>
   <figcaption> The classic Sponza scene rendered in Plain </figcaption>
 </figure>
@@ -28,7 +28,7 @@ The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" c
 
 <figure>
   <a href="/images/Plain/profiling-UI.png" target="_blank">
-    <img src="/images/Plain/profiling-UI.png" alt="Profiling and UI"/>
+    <img src="/images/Plain/profiling-UI.jpg" alt="Profiling and UI"/>
   </a>
   <figcaption> Profiling statistics and render settings UI </figcaption>
 </figure>
@@ -67,7 +67,7 @@ The project can be found on <a href="https://github.com/Gaukler/PlainRenderer" c
 
 <figure>
   <a href="/images/Plain/sky.png" target="_blank">
-    <img src="/images/Plain/sky.png" alt="Sky" />
+    <img src="/images/Plain/sky.jpg" alt="Sky" />
   </a>
   <figcaption> Sky rendering using earth's atmosphere values </figcaption>
 </figure>

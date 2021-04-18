@@ -48,7 +48,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/DepthPeeling.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/DepthPeeling.PNG">
+              <img src="/images/OtherProjects/ShaderCube/DepthPeeling.jpg">
             </a>
             <figcaption> Order independent transparency, using depth peeling </figcaption>
         </figure>
@@ -57,7 +57,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/Disco.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/Disco.PNG">
+              <img src="/images/OtherProjects/ShaderCube/Disco.jpg">
             </a>
             <figcaption> Many lights, using deferred shading and spherical light proxies </figcaption>
         </figure>
@@ -66,7 +66,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/IBL.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/IBL.PNG">
+              <img src="/images/OtherProjects/ShaderCube/IBL.jpg">
             </a>
             <figcaption> Diffuse image based lighting </figcaption>
         </figure>
@@ -75,7 +75,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/SphereTracing.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/SphereTracing.PNG">
+              <img src="/images/OtherProjects/ShaderCube/SphereTracing.jpg">
             </a>
             <figcaption> Sphere tracing on an implicit surface, defined by a signed distance field </figcaption>
         </figure>
@@ -84,7 +84,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/Translucency.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/Translucency.PNG">
+              <img src="/images/OtherProjects/ShaderCube/Translucency.jpg">
             </a>
             <figcaption> Translucency </figcaption>
         </figure>
@@ -93,7 +93,7 @@ My main contribution was to come up with cool shader effects and implement them.
     <div class="image_tripple">
         <figure>
             <a href="/images/OtherProjects/ShaderCube/Volumetric.PNG" target="_blank">
-              <img src="/images/OtherProjects/ShaderCube/Volumetric.PNG">
+              <img src="/images/OtherProjects/ShaderCube/Volumetric.jpg">
             </a>
             <figcaption> Volumetric shadowed spotlight </figcaption>
         </figure>
