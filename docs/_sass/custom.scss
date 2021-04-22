@@ -58,9 +58,11 @@ figcaption{
 
 .link-box{
     display : inline-block;
-    transform: scale(1.7);
     a:hover{
         text-decoration: none;
+    }
+    img{
+        vertical-align: middle;
     }
 }
     
@@ -108,7 +110,7 @@ figcaption{
 }
 
 .icon-svg{
-    width:16px;
+    width:28px;
     display:inline;
     vertical-align: inherit;
 }
