@@ -11,7 +11,7 @@ Lamberstraße 59
 56072 Koblenz  
 
 Kontakt:  
-Telefon: +49-15170376007  
+Telefon: +49 151 7037 6007  
 E-Mail: alexander.gauggel@web.de  
 
 ### Haftungsausschluss:
