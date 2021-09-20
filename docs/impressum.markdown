@@ -7,8 +7,8 @@ permalink: /impressum/
 ### Angaben gemäß § 5 TMG
 
 Alexander Gauggel  
-Lamberstraße 59  
-56072 Koblenz  
+Theodor-Heuss-Weg 37  
+61381 Friedrichsdorf  
 
 Kontakt:  
 Telefon: +49 151 7037 6007  
