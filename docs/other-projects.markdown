@@ -4,6 +4,46 @@ title: Other Projects
 permalink: /other-projects/
 ---
 
+# Vulkan Framework University Project
+
+We developed a Vulkan framework with a 14 person team during a university research project.
+After developing the core framework we split into smaller groups to develop small, independent projects using the framework to test and refine it.
+ 
+Our first project was a rendering demo that used several different techniques.
+The goal was to test a variety of API features, show the capabilities of the framework and to work on algorithms that we were personally interested in.
+We worked on the demo as a two person team.
+I implemented voxel cone tracing for diffuse and specular indirect illumination using real time scene voxelization, moment shadow mapping and MSAA with custom resolve.
+In addition I added film grain, lens distortion and chromatic aberration as post processing effects.
+
+<a href="/images/OtherProjects/VoxelConeTracing.PNG" target="_blank">
+  <img src="/images/OtherProjects/VoxelConeTracing.jpg">
+</a>
+
+I wrote a small GPU Monte-Carlo path tracer that consisted of a single compute shader. It used an existing compute Whitted-style raytracer as it's basis.
+It supports diffuse and specular light transport, uses importance sampling and runs in real time.
+Tracing is performed at a single sample per pixel. The frame results are accumulated, as long as the scene is static.
+Instead of triangle meshes it uses simple rectangle and sphere primitives.
+
+<a href="/images/OtherProjects/PathTracer.PNG" target="_blank">
+  <img src="/images/OtherProjects/PathTracer.jpg">
+</a>
+
+We wrote an application to experiment with mesh shaders in a three person team. It features meshlet frustum culling based on meshlet bounding spheres.
+I was responsible for the meshlet GPU data structure and writing the mesh and task shaders.
+
+<a href="/images/OtherProjects/MeshShader.PNG" target="_blank">
+  <img src="/images/OtherProjects/MeshShader.jpg">
+</a>
+
+I wanted to test out Vulkan's indirect dispatch feature. I chose post-process motion blur as an application.
+Indirect dispatch is used to dispatch a minimal compute shader for every part of the image. An initial shader classifies the different image parts, based on the motion. 
+Static parts of the image do not need any blur, so they use a simple copy shader. Uniformly moving parts of the image use a simplified blur. 
+The fully featured blur shader is only applied to the remaining areas.
+
+<a href="/images/OtherProjects/MotionBlur.PNG" target="_blank">
+  <img src="/images/OtherProjects/MotionBlur.jpg">
+</a>
+
 # OpenGL GPU Particle System
 
 This small C++ project was created as a learning exercise for compute shaders. 
