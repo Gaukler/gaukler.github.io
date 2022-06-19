@@ -7,8 +7,8 @@ permalink: /impressum/
 ### Angaben gemäß § 5 TMG
 
 Alexander Gauggel  
-Theodor-Heuss-Weg 37  
-61381 Friedrichsdorf  
+Lyoner Straße 40  
+60528 Frankfurt am Main  
 
 Kontakt:  
 Telefon: +49 151 7037 6007  
