@@ -7,6 +7,5 @@ permalink: /about/
 <img src="/images/portrait.jpg" class="portrait"/>
 <br/>
 
-Hello there! My name is Alexander Gauggel. I'm currently doing a Master's in computational visualistics at the University of Koblenz-Landau.  
-My main interest is in real-time rendering and all the systems connected to it, like memory management, threading and asset pipelines. 
-I'm especially interested in learning about the nitty-griddy details of hardware and using that knowledge to make things run fast.
+Hello there! My name is Alexander Gauggel. I'm currently working as a junior graphics programmer at Deck13.  
+My main focus is on real-time rendering techniques and making things run fast on the GPU.
