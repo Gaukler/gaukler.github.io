@@ -80,6 +80,8 @@ In actuality, the lower half would be a mirror image of the upper one.
 <img src = "/images/Marschner/azimuthalPathR.svg" alt="Cylinder reflection distribution"/>
 </div>
 
+**Edit**: The initial version of this figure showed the normals instead of the reflection. Credit goes to Dolkar for pointing out the error. 
+
 The incoming rays are uniformly distributed across the height $$h$$. After the reflection they are non-uniform with regard to their angular distribution. They become sparser
 towards the top of the circle. Since the incoming light is uniform across the cross section of the circle, less light is reflected towards the top (and bottom).
 The main component of the path intensity is the ratio between the change in height of the incoming rays and the change in angle of the reflected rays. This is formalized in equations *(5)* and *(6)*
