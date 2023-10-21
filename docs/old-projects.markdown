@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /old-projects/
 ---
 
 <div class="project-container">
