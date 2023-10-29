@@ -38,10 +38,10 @@ These functions are defined once for each path:
 $$ M_R $$, $$ M_{TT} $$ and $$ M_{TRT} $$ and their counterparts $$ N_R $$, $$ N_{TT} $$ and $$ N_{TRT} $$. The entire scattering function is defined as:
 
 \begin{equation}
-S = M_R N_R / cos^2(\theta_d) + M_{TT} N_{TT} / cos^2(\theta_d) + M_{TRT} N_{TRT} / cos^2(\theta_d)
+S = M_R N_R / \cos^2(\theta_d) + M_{TT} N_{TT} / \cos^2(\theta_d) + M_{TRT} N_{TRT} / \cos^2(\theta_d)
 \end{equation}
 
-Note that I omitted the parameters from the Marschner paper for brevity. The division by $$cos^2(\theta_d)$$ is a normalization factor that accounts for the projected solid 
+Note that I omitted the parameters from the Marschner paper for brevity. The division by $$\cos^2(\theta_d)$$ is a normalization factor that accounts for the projected solid 
 angle of the specular cone. However, this assumes $$\theta_i=\theta_r$$. This does not hold when taking surface roughness into 
 account and is therefore only an approximation, as noted in **[3]**.
 
@@ -115,22 +115,22 @@ We want to calculate the change of $$\phi$$ in regard to $$h$$, so we have to re
 The relationship between the two is directly taken from the definition of the unit circle:
 
 \begin{equation}
-sin(\gamma_i) = h \label{eq:gamma_i_to_h}
+\sin(\gamma_i) = h \label{eq:gamma_i_to_h}
 \end{equation}
 
 It follows:
 
 \begin{equation}
-\gamma_i = arcsin(h) \label{eq:gamma_i}
+\gamma_i = \arcsin(h) \label{eq:gamma_i}
 \end{equation}
 
 Putting this back into equation \eqref{eq:phi_gamma}:
 
 \begin{equation}
-\phi = -2 arcsin(h)
+\phi = -2 \arcsin(h)
 \end{equation}
 
-Taking the derivative in regard to $$h$$, keeping in mind that $$\frac d{dx} arcsin(x) = \frac1{\sqrt{1-x^2}}$$:
+Taking the derivative in regard to $$h$$, keeping in mind that $$\frac d{dx} \arcsin(x) = \frac1{\sqrt{1-x^2}}$$:
 
 \begin{equation}
 \frac{d\phi}{dh} = -2 \frac1{\sqrt{1-h^2}}
@@ -139,49 +139,49 @@ Taking the derivative in regard to $$h$$, keeping in mind that $$\frac d{dx} arc
 The next step is to express this in regards to our shading input $$\phi$$. We will use our previous definition \eqref{eq:gamma_i_to_h} to replace $$h$$ by $$\gamma_i$$ again:
 
 \begin{equation}
-\frac{d\phi}{dh} = -2 \frac1{\sqrt{1-sin^2(\gamma_i)}}
+\frac{d\phi}{dh} = -2 \frac1{\sqrt{1-\sin^2(\gamma_i)}}
 \end{equation}
 
-We can simplify this using the trigonometric identity $$cos(x) = \sqrt{1-sin^2(x)}$$:
+We can simplify this using the trigonometric identity $$\cos(x) = \sqrt{1-\sin^2(x)}$$:
 
 \begin{equation}
-\frac{d\phi}{dh} = -2 \frac1{cos(\gamma_i)}
+\frac{d\phi}{dh} = -2 \frac1{\cos(\gamma_i)}
 \end{equation}
 
 Now we solve our initial function \eqref{eq:phi_gamma} for $$\phi$$, which is simply $$\gamma_i = - \frac \phi 2$$, and plug this in:
 
 \begin{equation}
-\frac{d\phi}{dh} = -2 \frac1{cos(-\frac \phi 2)}
+\frac{d\phi}{dh} = -2 \frac1{\cos(-\frac \phi 2)}
 \end{equation}
 
-Since $$cos(x) = cos(-x)$$ we drop the minus sign inside the cosine:
+Since $$\cos(x) = \cos(-x)$$ we drop the minus sign inside the cosine:
 
 \begin{equation}
-\frac{d\phi}{dh} = -2 \frac1{cos(\frac \phi 2)}
+\frac{d\phi}{dh} = -2 \frac1{\cos(\frac \phi 2)}
 \end{equation}
 
 We can plug this into our initial definition of $$N$$ \eqref{eq:azimuthal_scattering}:
 
 \begin{equation}
-N_R = A_R |2 (-2 \frac1{cos(\frac \phi 2)}) |^{-1}
+N_R = A_R |2 (-2 \frac1{\cos(\frac \phi 2)}) |^{-1}
 \end{equation}
 
 We simplify this by multiplying out the constant factors and dropping the minus sign inside the absolute value:
 
 \begin{equation}
-N_R = A_R |4 \frac1{cos(\frac \phi 2)}) |^{-1}
+N_R = A_R |4 \frac1{\cos(\frac \phi 2)}) |^{-1}
 \end{equation}
  
 Then we apply the power of minus one:
 
 \begin{equation}
-N_R = A_R |\frac1 4 cos(\frac \phi 2))|
+N_R = A_R |\frac1 4 \cos(\frac \phi 2))|
 \end{equation}
 
 Finally, pulling out the fraction outside the absolute value gives:
 
 \begin{equation}
-N_R = A_R \frac1 4 |cos(\frac \phi 2))|
+N_R = A_R \frac1 4 |\cos(\frac \phi 2))|
 \end{equation}
 
 This matches equation *(6)* from the Weta paper **[3]**. Note that they leave $$A_R$$ out of their equation, since they list it in the context of analyzing energy conservation
@@ -193,20 +193,20 @@ The Marschner paper includes a fairly detailed derivation of the Bravais Index t
 some minor errors. Luckily, there is an extended version of the appendix **[6]**. The paper appendix incorrectly states:
 
 \begin{equation}
-\eta cos \gamma = \eta' cos \delta \label{eq:gamma_delta_incorrect}
+\eta \cos \gamma = \eta' \cos \delta \label{eq:gamma_delta_incorrect}
 \end{equation}
 
 $$\gamma$$ is the inclination of the incoming vector with regard to the normal plane. $$\delta$$ is the corresponding inclination of the refracted vector.
 Solving equation \eqref{eq:gamma_delta_incorrect} for $$\eta'$$, we get:
 
 \begin{equation}
-\eta' = \frac{\eta cos \gamma}{cos \delta} \label{eq:eta_prime_incorrect}
+\eta' = \frac{\eta \cos \gamma}{\cos \delta} \label{eq:eta_prime_incorrect}
 \end{equation}
 
 Compare this to the extended appendix **[6]** that states:
 
 \begin{equation}
-\eta' = \frac{\eta cos \delta}{cos \gamma} \label{eq:eta_prime_correct}
+\eta' = \frac{\eta \cos \delta}{\cos \gamma} \label{eq:eta_prime_correct}
 \end{equation}
 
 $$ \gamma $$ and $$ \delta $$ are swapped. Initially, I was unsure which version was correct. I wrote a small Octave script to manually compute
@@ -214,18 +214,18 @@ some refraction vectors and their projections to confirm that the extended appen
 Using the script to check the paper equations used for deriving equation \eqref{eq:eta_prime_incorrect}, I found the following two statements to be incorrect as well:
 
 \begin{equation}
-\sin \theta_i' = sin \theta_i cos \gamma
+\sin \theta_i' = \sin \theta_i \cos \gamma
 \end{equation}
 
 \begin{equation}
-\sin \theta_t' = sin \theta_t cos \delta
+\sin \theta_t' = \sin \theta_t \cos \delta
 \end{equation}
 
 The extended appendix does not go into great detail how it arrives at equation \eqref{eq:eta_prime_correct}. Let's look into this next.
 As stated in the paper appendix, Snell's law applies in the vertical normal plane:
 
 \begin{equation}
-sin \theta_i' = \eta' sin \theta_t' \label{eq:snells_law_projected}
+\sin \theta_i' = \eta' \sin \theta_t' \label{eq:snells_law_projected}
 \end{equation}
 
 $$\theta_i'$$ and $$\theta_t'$$ are the inclinations of the incoming and refracted vectors after projecting them onto the normal plane. 
@@ -247,73 +247,73 @@ Looking at the geometry of *Figure 16 (c)* in the paper appendix **[4]**, we can
 is a direction and therefore a unit vector, so $$||v_i|| = 1$$. We can use this to compute the length of the projection of $$v_i$$ on the normal plane, denoted $$v_i'$$:
 
 \begin{equation}
-cos\gamma = \frac{||v_i'||}{||v_i||}
+\cos\gamma = \frac{||v_i'||}{||v_i||}
 \end{equation}
 
 \begin{equation}
-cos\gamma = ||v_i'||
+\cos\gamma = ||v_i'||
 \end{equation}
 
 The top of the triangle between $$v_i'$$ and it's projection on the normal $$n$$ is equal to $$s_i'$$. This gives us:
 
 \begin{equation}
-sin \theta_i' = \frac{s_i'}{||v_i'||}
+\sin \theta_i' = \frac{s_i'}{||v_i'||}
 \end{equation}
 
 \begin{equation}
-sin \theta_i' = \frac{s_i'}{cos \gamma} \label{eq:incoming_projection_and_inclination}
+\sin \theta_i' = \frac{s_i'}{\cos \gamma} \label{eq:incoming_projection_and_inclination}
 \end{equation}
 
 We can apply the equivalent steps to the refracted vector to obtain:
 
 \begin{equation}
-sin \theta_t' = \frac{s_t'}{cos \delta} \label{eq:refracted_projection_and_inclination}
+\sin \theta_t' = \frac{s_t'}{\cos \delta} \label{eq:refracted_projection_and_inclination}
 \end{equation}
 
 Substituting \eqref{eq:incoming_projection_and_inclination} and \eqref{eq:refracted_projection_and_inclination} into equation \eqref{eq:snells_law_projected}:
 
 \begin{equation}
-\eta' \frac{s_t'}{cos \delta} = \frac{s_i'}{cos \gamma}
+\eta' \frac{s_t'}{\cos \delta} = \frac{s_i'}{\cos \gamma}
 \end{equation}
 
 \begin{equation}
-\eta' = \frac{s_i'}{s_t'} \frac{cos \delta}{cos \gamma}
+\eta' = \frac{s_i'}{s_t'} \frac{\cos \delta}{\cos \gamma}
 \end{equation}
 
 Substituting $$\eta$$ into this using equation \eqref{eq:eta_ratio} yields equation \eqref{eq:eta_prime_correct}. As a reminder:
 
 $$
-\eta' = \eta \frac{cos \delta}{cos \gamma}
+\eta' = \eta \frac{\cos \delta}{\cos \gamma}
 $$
 
-The next step is to get rid of the $$cos\delta$$ term. The extended appendix observes:
+The next step is to get rid of the $$\cos\delta$$ term. The extended appendix observes:
 
 \begin{equation}
-\eta sin \delta = sin \gamma
+\eta \sin \delta = \sin \gamma
 \end{equation}
 
-We transform this for substitution by using the trigonometric identity $$ sin(x) = \sqrt{1 - cos^2(x)} $$:
+We transform this for substitution by using the trigonometric identity $$\sin(x) = \sqrt{1 - \cos^2(x)} $$:
 
 $$
 \begin{aligned}
-\eta sin \delta &= sin \gamma \\
-\eta \sqrt{1 - cos^2 \delta} &= sin \gamma \\
-\eta^2(1 - cos^2 \delta) &= sin^2 \gamma \\
-\eta^2 - \eta^2 cos^2 \delta &= sin^2 \gamma \\
-\eta^2 cos^2 \delta &= \eta^2 - sin^2 \gamma
+\eta \sin \delta &= \sin \gamma \\
+\eta \sqrt{1 - \cos^2 \delta} &= \sin \gamma \\
+\eta^2(1 - \cos^2 \delta) &= \sin^2 \gamma \\
+\eta^2 - \eta^2 \cos^2 \delta &= \sin^2 \gamma \\
+\eta^2 \cos^2 \delta &= \eta^2 - \sin^2 \gamma
 \end{aligned}
 $$
 
 This intermediate result is also listed in the extended appendix. When we take the square root of this, we get:
 
 \begin{equation}
-\eta cos \delta = \sqrt{\eta^2 - sin^2 \gamma}
+\eta \cos \delta = \sqrt{\eta^2 - \sin^2 \gamma}
 \end{equation}
  
 Finally,     we substitute this term into equation \eqref{eq:eta_prime_correct} to obtain:
 
 \begin{equation}
-\eta'(\gamma) = \frac{\sqrt{\eta^2 - sin^2 \gamma}}{cos \gamma}
+\eta'(\gamma) = \frac{\sqrt{\eta^2 - \sin^2 \gamma}}{\cos \gamma}
 \end{equation}
 
 # Angle for computing $$\eta'$$
@@ -340,13 +340,13 @@ As noted in **[7]**, the internal path segment length $$l$$ is incorrect in the 
 There it is incorrectly stated:
 
 \begin{equation}
-l_{Marschner}(\gamma_t) = 2 + 2cos(2\gamma_t) \label{eq:path_length_marschner}
+l_{\mathrm{Marschner}}(\gamma_t) = 2 + 2\cos(2\gamma_t) \label{eq:path_length_marschner}
 \end{equation}
 
 We can derive the correct term using the law of cosines. The law of cosines relates the length of the triangle sides using the cosine of the angle:
 
 \begin{equation}
-c^2 = a^2 + b^2 - 2ab cos \gamma \label{eq:law_of_cosines}
+c^2 = a^2 + b^2 - 2ab \cos \gamma \label{eq:law_of_cosines}
 \end{equation}
 
 As seen in *Figure 9* in **[4]**, $$a=1$$ and $$b=1$$, since this is the radius of the unit circle. We require the angle opposite of $$l$$.
@@ -354,30 +354,30 @@ Since we know that the sum of all angles in a triangle is $$\pi$$, we know $$\ga
 
 $$
 \begin{aligned}
-l^2 &= 1^2 + 1^2 - 2 cos(\pi - 2 \gamma_t) \\
-l^2 &= 2 - 2 cos(\pi - 2 \gamma_t)
+l^2 &= 1^2 + 1^2 - 2 \cos(\pi - 2 \gamma_t) \\
+l^2 &= 2 - 2 \cos(\pi - 2 \gamma_t)
 \end{aligned}
 $$
 
-Then we simplify this using $$cos(x) = cos(-x)$$ and $$cos(x) = -cos(x - \pi)$$:
+Then we simplify this using $$\cos(x) = \cos(-x)$$ and $$\cos(x) = -\cos(x - \pi)$$:
 
 $$
 \begin{aligned}
-l^2 &= 2 - 2 cos( 2 \gamma - \pi) \\
-l^2 &= 2 + 2 cos(2 \gamma_t)
+l^2 &= 2 - 2 \cos( 2 \gamma - \pi) \\
+l^2 &= 2 + 2 \cos(2 \gamma_t)
 \end{aligned}
 $$
 
 Taking the square root, the final path segment length is:
 
 \begin{equation}
-l = \sqrt{2 + 2 cos(2 \gamma_t)} \label{eq:path_length_derived}
+l = \sqrt{2 + 2 \cos(2 \gamma_t)} \label{eq:path_length_derived}
 \end{equation}
 
 Comparing this to equation \eqref{eq:path_length_marschner}, it is clear that the latter is missing the square root. In **[7]**, the path length is given as:
 
 \begin{equation}
-l_{Zinke} = 2 cos(\gamma_t) \label{eq:path_length_zinke}
+l_{\mathrm{Zinke}} = 2 \cos(\gamma_t) \label{eq:path_length_zinke}
 \end{equation}
 
 Note that my notation differs slightly from **[7]**. For one, I assume that the fiber radius is one, so I omitted $$r=1$$ . Furthermore, they relate the 
@@ -390,35 +390,35 @@ or when taking their absolute value. We can show that they are equal. First, we 
 
 $$
 \begin{aligned}
-l &= \sqrt{2 + 2 cos(2 \gamma_t)} \\
-l &= \sqrt{2} \sqrt{1 + cos(2 \gamma_t)} \\
-l &= \sqrt{2} \sqrt{2} \sqrt{\frac{1 + cos(2 \gamma_t)}{2}} \\
-l &= 2 \sqrt{\frac{1 + cos(2 \gamma_t)}{2}}
+l &= \sqrt{2 + 2 \cos(2 \gamma_t)} \\
+l &= \sqrt{2} \sqrt{1 + \cos(2 \gamma_t)} \\
+l &= \sqrt{2} \sqrt{2} \sqrt{\frac{1 + \cos(2 \gamma_t)}{2}} \\
+l &= 2 \sqrt{\frac{1 + \cos(2 \gamma_t)}{2}}
 \end{aligned}
 $$
 
-Then we use the trigonometric identity $$cos(\frac{x}{2}) = sign(cos\frac{x}{2})\sqrt{\frac{1+cos(x)}{2}}$$ to arrive at:
+Then we use the trigonometric identity $$\cos(\frac{x}{2}) = \mathrm{sign}(\cos\frac{x}{2})\sqrt{\frac{1+\cos(x)}{2}}$$ to arrive at:
 
 \begin{equation}
-sign(cos(\gamma_t)) l = 2 cos(\gamma_t)
+\mathrm{sign}(\cos(\gamma_t)) l = 2 \cos(\gamma_t)
 \end{equation}
 
 Taking the absolute value of this equation gives:
 
 \begin{equation}
-|sign(cos(\gamma_t)) l| = |2 cos(\gamma_t)|
+|\mathrm{sign}(\cos(\gamma_t)) l| = |2 \cos(\gamma_t)|
 \end{equation}
 
 From equation \eqref{eq:path_length_derived}, we know that $$l \geq 0$$ and $$l$$ is zero when $$cos(\gamma_t)$$ is zero, so we can drop the sign:
 
 \begin{equation}
-|l| = |2 cos(\gamma_t)|
+|l| = |2 \cos(\gamma_t)|
 \end{equation}
 
 Since we know that $$l$$ is never negative, we can drop the absolute value on the left side of the equation as well:
 
 \begin{equation}
-l = |2 cos(\gamma_t)|
+l = |2 \cos(\gamma_t)|
 \end{equation}
 
 This matches \eqref{eq:path_length_zinke}, except for the absolute value.
