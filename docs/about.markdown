@@ -9,3 +9,5 @@ permalink: /about/
 
 Hello there! My name is Alexander Gauggel. I'm currently working as a graphics programmer at Crytek.  
 My main focus is on real-time rendering techniques and making things run fast on the GPU.
+
+All opinions expressed are my own and do not reflect my employer.
